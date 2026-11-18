@@ -13,7 +13,7 @@ import { NextResponse } from 'next/server';
 // cookie gains nothing — `auth()` runs again in the page and in every API
 // route, where the signature is actually verified.
 
-const PUBLIC_PATHS = new Set(['/', '/login', '/privacy', '/terms']);
+const PUBLIC_PATHS = new Set(['/', '/login', '/privacy', '/terms', '/api/signup']);
 
 // Marketing and auth pages a signed-in user should not linger on.
 const REDIRECT_WHEN_SIGNED_IN = new Set(['/', '/login']);
